@@ -4,18 +4,21 @@
 This project implements a basic image processing app using Python. It progressively introduces different concepts such as image manipulation, object-oriented programming (OOP), and machine learning. By the end, the app can handle various image manipulations and includes a K-Nearest Neighbors (KNN) classifier for image label prediction.
 
 ## 📝 Key Parts
+
 Part 1: RGB Image Representation
 Part 2: Image Processing Template Class
-Part 3: Standard Image Processing (Monetized)
+Part 3: Standard Image Processing 
 Part 4: Premium Image Processing (New Features)
 Part 5: KNN Classifier for Image Label Prediction
-🛠️ Technologies Used
+
+## 🛠️ Technologies Used
 Python: Core language
 Pillow (PIL): For handling images (testing/viewing)
 NumPy: For large data sets (testing)
 tkinter: For viewing images
 
 ## 📂 Project Structure
+
 1. RGBImage Class (Part 1)
 Represents an image as a 3D list with RGB values. Key methods include:
 
@@ -35,8 +38,8 @@ get_average_brightness(): Calculates average brightness.
 adjust_brightness(): Adjusts brightness by intensity.
 blur(): Blurs the image by averaging neighbors.
 3. Standard Image Processing Class (Part 3)
-Monetized version where each method adds to the cost. Features:
 
+Features:
 negate(), grayscale(), rotate_180(), adjust_brightness(), blur() (inherit from template but add cost).
 redeem_coupon(): Reduces cost of future operations.
 4. Premium Image Processing Class (Part 4)
@@ -56,5 +59,4 @@ predict(): Predicts the label using the KNN algorithm.
 ## 📚 Key Concepts
 Image Representation: Images are represented as 3D matrices with RGB values.
 Deep vs. Shallow Copy: Ensures deep copies of images to prevent modifying the original.
-Inheritance & Monetization: Uses OOP inheritance to create standard and premium versions.
 KNN Classifier: Uses Euclidean distance to classify images based on their nearest neighbors.
